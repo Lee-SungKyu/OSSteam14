@@ -14,6 +14,7 @@
 * Load Reservation : Textfile Upload
 * Search Room Info : 방 검색 후 방에 대한 정보 출력
 * Search Bed Count : 침대 수 검색 후 갯 수 만큼 있는 방 출력
+* Search Head Count : 최대 인원 수 가능한 방 검색
 * Search Empty Room : 빈 방 확인
 * Search Name : 이름으로 예약된 방 검색 후 
 ## 역할 분담
@@ -29,6 +30,7 @@
 ### 이성규 학우님
 * Search Room Info : 방 검색 후 방에 대한 정보 출력
 * Search Bed Count : 침대 수 검색 후 갯 수 만큼 있는 방 출력
+* Search Head Count : 최대 인원 수 가능한 방 검색
 * Search Empty Room : 빈 방 확인
 * Search Name : 이름으로 예약된 방 검색 후 
 * Main.c
