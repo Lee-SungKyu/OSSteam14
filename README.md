@@ -1,8 +1,9 @@
 # OSSteam14
 
 ## 주제설명
-*
-*
+* 주제 : 호텔 예약 및 관리 시스템
+* CRUD, 텍스트 파일 save/load 기능을 이용하여 유저들의 호텔 예약을 관리하는 시스템입니다.
+* 또한 Room Info, Bed Count, Head Count search 기능을 통해 유저에게 호텔방과 예약 현황 등의 정보를 제공받을 수 있습니다.
 ## 기능 설명
 * Create Reservation : 빈방 예약
 * Read Reservation : 예약된 방 출력 (한개)
