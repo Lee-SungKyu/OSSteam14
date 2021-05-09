@@ -26,6 +26,7 @@
 * Update Reservation : 예약된 방 수정
 * Delete Reservation : 예약된 방 삭제
 * Save Reservation : 새로 추가된 예약 방 Textfile로 저장
+* Load Reservation : Textfile Upload
 * Selection Reservation : List Reservation이용하여 Update/Delete Reservation떄 사용
 
 ### 이성규 학우님
