@@ -40,6 +40,11 @@ int main()
 
     FILE *fp;
     
+    createReservation(&Rlist[index++], &count);	// createReservation test
+	updateReservation(Rlist, &count);	// updateReservation test
+	//deleteReservation(Rlist[index++], count);	// deleteReservation test
+
+    /*
     if ((fp = fopen("reserve.txt", "r")))
     {
         for (c = getc(fp); c != EOF; c = getc(fp))
@@ -50,7 +55,7 @@ int main()
                 linecount++;
             }
         }
-        count = loadReservation(Rlist, Hlist, linecount);
+        // count = loadReservation(Rlist, Hlist, linecount);
         index = count;
         
         fclose(fp);
@@ -61,7 +66,7 @@ int main()
         fp = fopen("reserve.txt", "wt");
         fclose(fp);
     }
-
+    
     while(1)
     {
         menu = selectMenu(menu);
@@ -110,4 +115,5 @@ int main()
             search_name(Rlist, Hlist, count);
         }
     }
+    */
 }

@@ -1,17 +1,72 @@
 #include "Lproduct.h"
 
-void createReservation(Reserve *p[], int count) {
+void createReservation(Reserve *p, int *count) {
 	printf("예약할 방 번호는? : ");
-	scanf("%d", &p[count]->room_number2);
+	scanf("%d", &p->room_number2);
 
 	printf("묶을 인원은? : ");
-	scanf("%d", &p[count]->head_count2);
+	scanf("%d", &p->head_count2);
 
 	printf("당신의 이름은? : ");
-	scanf("%s", p[count]->name2);
+	scanf("%s", p->name2);
 
-	count ++;
+	*count = *count + 1;
 }
+
+void updateReservation(Reserve p[], int *count) {
+    int editRoom = 0;
+    int editCount = 0;
+    int check = 0;
+
+    printf("변경할 방 번호는? : ");
+    scanf("%d", &editRoom);
+
+    for(int i = 0; i < *count; i ++) {
+        if (p[i].room_number2 == editRoom) {
+            editCount = i;
+            check = 1;
+            break;
+        }
+    }
+
+    if (check == 0) {
+        printf("해당 방 번호는 예약되지 않았습니다!\n");
+    }
+
+	else {
+    	printf("방 번호? : ");
+    	scanf("%d", &p[editCount].room_number2);
+
+    	printf("인원수는? : ");
+    	scanf("%d", &p[editCount].head_count2);
+
+    	printf("이름은? : ");
+    	scanf("%s", p[editCount].name2);
+	
+    	printf("변경이 완료되었습니다!\n");
+	}
+}
+/*
+void deleteReservation(Reserve *p[], int count) {
+    int deleteNum = 0;
+    int check = 0;
+
+    printf("삭제할 방 번호는? : ");
+    scanf("%d", &deleteNum);
+
+    for(int i = 0; i < count; i ++) {
+        if (p[i]->room_number2 == deleteNum) {
+            check = 1;
+            p[i]->room_number2 = -1;
+        }
+    }
+    
+    if (check == 0) {
+        printf("해당 방 번호는 예약되지 않았습니다!\n");
+    }
+}
+*/
+
 /*
 int loadReserve(Reserve *p[],Hotel *h[],int linecount)
 {
