@@ -67,6 +67,16 @@ void deleteReservation(Reserve p[], int *count) {
     }
 }
 
+void listReservation(Reserve p[], int *count) {
+    printf("\nNo Room# name HeadCount\n");
+    printf("=====================\n");
+    for(int i = 0; i < *count; i ++) {
+        if (p[i].room_number2 != -1) {
+            printf("%-2d %-5d %-4s %d\n", i+1, p[i].room_number2, p[i].name2, p[i].head_count2);
+        }
+    }
+}
+
 /*
 int loadReserve(Reserve *p[],Hotel *h[],int linecount)
 {
