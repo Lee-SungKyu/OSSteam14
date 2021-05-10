@@ -42,7 +42,7 @@ int main()
     
     createReservation(&Rlist[index++], &count);	// createReservation test
 	updateReservation(Rlist, &count);	// updateReservation test
-	//deleteReservation(Rlist[index++], count);	// deleteReservation test
+	deleteReservation(Rlist, &count);	// deleteReservation test
 
     /*
     if ((fp = fopen("reserve.txt", "r")))

@@ -46,26 +46,26 @@ void updateReservation(Reserve p[], int *count) {
     	printf("변경이 완료되었습니다!\n");
 	}
 }
-/*
-void deleteReservation(Reserve *p[], int count) {
+
+void deleteReservation(Reserve p[], int *count) {
     int deleteNum = 0;
     int check = 0;
 
     printf("삭제할 방 번호는? : ");
     scanf("%d", &deleteNum);
 
-    for(int i = 0; i < count; i ++) {
-        if (p[i]->room_number2 == deleteNum) {
+    for(int i = 0; i < *count; i ++) {
+        if (p[i].room_number2 == deleteNum) {
             check = 1;
-            p[i]->room_number2 = -1;
+            p[i].room_number2 = -1;
+			printf("삭제가 완료되었습니다!\n");
+			break;
         }
     }
-    
     if (check == 0) {
         printf("해당 방 번호는 예약되지 않았습니다!\n");
     }
 }
-*/
 
 /*
 int loadReserve(Reserve *p[],Hotel *h[],int linecount)
