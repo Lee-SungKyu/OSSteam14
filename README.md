@@ -36,3 +36,7 @@
 * Search Empty Room : 빈 방 확인
 * Search Name : 이름으로 예약된 방 검색 후 
 * Main.c
+* 추가된 기능:
+* Read Hotel
+* List Hotel
+
