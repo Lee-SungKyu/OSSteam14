@@ -16,16 +16,21 @@ typedef struct
 	char name2[100];
 }Reserve;
 
-void createReservation(Reserve *p, int *count);
-void updateReservation(Reserve p[], int *count);
-void deleteReservation(Reserve p[], int *count);
-void listReservation(Reserve p[], int *count);
+int createReservation(Reserve *p);
+void updateReservation(Reserve *p[], int *count);
+void deleteReservation(Reserve *p[], int *count);
+void listReservation(Reserve *p[], int *count);
+void listHotel(Hotel *p[]);
 
-// int loadReservation(Reserve *p[], Hotel *h[],int linecount);
+
+void loadHotel(Hotel *p[]);
+int loadReservation(Reserve *p[],int linecount);
 void saveReservation(Reserve *p[], Hotel *h[], int count);
-
+void readHotel(Hotel p);
+void readReserve(Reserve p);
 void search_room_info(Hotel *p[], int count);
 void search_bed_count(Hotel *p[], int count);
 void search_head_count(Hotel *p[], int count);
 void search_empty_room(Hotel *p[], int count);
 void search_name(Reserve *p[], Hotel *h[], int count);
+
