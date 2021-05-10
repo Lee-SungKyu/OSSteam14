@@ -1,5 +1,18 @@
 #include "Lproduct.h"
 
+void createReservation(Reserve *p[], int count) {
+	printf("예약할 방 번호는? : ");
+	scanf("%d", &p[count]->room_number2);
+
+	printf("묶을 인원은? : ");
+	scanf("%d", &p[count]->head_count2);
+
+	printf("당신의 이름은? : ");
+	scanf("%s", p[count]->name2);
+
+	count ++;
+}
+/*
 int loadReserve(Reserve *p[],Hotel *h[],int linecount)
 {
     int count = 0;
@@ -25,7 +38,7 @@ int loadReserve(Reserve *p[],Hotel *h[],int linecount)
     printf("\n=> 로딩 성공!\n");
     return count;
 }
-
+*/
 void saveReservation(Reserve *p[], Hotel *h[], int count)
 {
     FILE *fp;
@@ -61,7 +74,7 @@ void saveReservation(Reserve *p[], Hotel *h[], int count)
     fclose(fp);
     printf("=> 저장됨!");
 }
-
+/*
 void search_room_info(Hotel *p[], int count)
 {
     int scnt = 0;
@@ -87,6 +100,7 @@ void search_room_info(Hotel *p[], int count)
         printf("\n");
     }
 }
+*/
 void search_bed_count(Hotel *p[], int count)
 {
     int scnt = 0;
@@ -152,6 +166,7 @@ void search_empty_room(Hotel *p[], int count)
     if(scnt == 0) printf("=> 방이 없습니다!");
     printf("\n");
 }
+/*
 void search_name(Reserve *p[],Hotel *h[], int count)
 {
     int scnt = 0;
@@ -175,4 +190,4 @@ void search_name(Reserve *p[],Hotel *h[], int count)
         printf("\n");
     }
 }
-
+*/

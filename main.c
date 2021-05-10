@@ -12,6 +12,8 @@ int selectMenu()
     printf("7. 예약자 이름 검색");
     printf("0. 종료");
     printf("==================\n");
+
+    return 0;
 }
 int selectMenu2()
 {
@@ -23,6 +25,7 @@ int selectMenu2()
     printf("0. 뒤로가기");
     printf("==================\n");
 
+    return 0;
 }
 
 int main()
