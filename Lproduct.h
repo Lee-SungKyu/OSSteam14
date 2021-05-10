@@ -16,9 +16,11 @@ typedef struct
 	char name2[100];
 }Reserve;
 
+void createReservation(Reserve *p, int *count);
+void updateReservation(Reserve *p, int *count);
+// void deleteReservation(Reserve *p, int count);
 
-
-int loadReservation(Reserve *p[], Hotel *h[],int linecount);
+// int loadReservation(Reserve *p[], Hotel *h[],int linecount);
 void saveReservation(Reserve *p[], Hotel *h[], int count);
 
 void search_room_info(Hotel *p[], int count);

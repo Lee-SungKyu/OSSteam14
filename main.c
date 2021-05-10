@@ -12,6 +12,8 @@ int selectMenu()
     printf("7. 예약자 이름 검색");
     printf("0. 종료");
     printf("==================\n");
+
+    return 0;
 }
 int selectMenu2()
 {
@@ -23,6 +25,7 @@ int selectMenu2()
     printf("0. 뒤로가기");
     printf("==================\n");
 
+    return 0;
 }
 
 int main()
@@ -37,6 +40,11 @@ int main()
 
     FILE *fp;
     
+    createReservation(&Rlist[index++], &count);	// createReservation test
+	updateReservation(Rlist, &count);	// updateReservation test
+	//deleteReservation(Rlist[index++], count);	// deleteReservation test
+
+    /*
     if ((fp = fopen("reserve.txt", "r")))
     {
         for (c = getc(fp); c != EOF; c = getc(fp))
@@ -47,7 +55,7 @@ int main()
                 linecount++;
             }
         }
-        count = loadReservation(Rlist, Hlist, linecount);
+        // count = loadReservation(Rlist, Hlist, linecount);
         index = count;
         
         fclose(fp);
@@ -58,7 +66,7 @@ int main()
         fp = fopen("reserve.txt", "wt");
         fclose(fp);
     }
-
+    
     while(1)
     {
         menu = selectMenu(menu);
@@ -107,4 +115,5 @@ int main()
             search_name(Rlist, Hlist, count);
         }
     }
+    */
 }
