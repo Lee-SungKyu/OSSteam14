@@ -11,7 +11,6 @@
 * Update Reservation : 예약된 방 수정
 * Delete Reservation : 예약된 방 삭제
 * Save Reservation : 새로 추가된 예약 방 Textfile로 저장
-* Selection Reservation : List Reservation이용하여 Update/Delete Reservation떄 사용
 * Load Reservation : Textfile Upload
 * Search Room Info : 방 검색 후 방에 대한 정보 출력
 * Search Bed Count : 침대 수 검색 후 갯 수 만큼 있는 방 출력
@@ -25,7 +24,6 @@
 * List Reservation : 예약된 방 모두 출력 (Read Reservation 이용)
 * Update Reservation : 예약된 방 수정
 * Delete Reservation : 예약된 방 삭제
-* Selection Reservation : List Reservation이용하여 Update/Delete Reservation떄 사용
 
 ### 이성규 학우님
 * Save Reservation : 새로 추가된 예약 방 Textfile로 저장
