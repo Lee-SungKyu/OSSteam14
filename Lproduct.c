@@ -5,23 +5,7 @@ int createReservation(Reserve *p) {
     
         printf("\n예약할 방 번호는? : ");
 	    scanf("%d", &p->room_number2);
-        while(p->room_number2 != 101 || p->room_number2 != 102 || p->room_number2 != 103 || p->room_number2 != 104 || p->room_number2 != 105 || 
-        p->room_number2 != 201 || p->room_number2 != 202 || p->room_number2 != 203 || p->room_number2 != 204 || p->room_number2 != 205 || 
-        p->room_number2 != 301 || p->room_number2 != 302 || p->room_number2 != 303 || p->room_number2 != 304 || p->room_number2 != 305 || 
-        p->room_number2 != 401 || p->room_number2 != 402 || p->room_number2 != 403 || p->room_number2 != 404 || p->room_number2 != 405 || 
-        p->room_number2 != 501 || p->room_number2 != 502 || p->room_number2 != 503 || p->room_number2 != 504 || p->room_number2 != 505)
-        {
-            printf("방이 존재하지 않습니다\n다시 입력해 주세요 : ");
-            scanf("%d", &p->room_number2);
-            if(p->room_number2 == 101 || p->room_number2 == 102 || p->room_number2 == 103 || p->room_number2 == 104 || p->room_number2 == 105 || 
-            p->room_number2 == 201 || p->room_number2 == 202 || p->room_number2 == 203 || p->room_number2 == 204 || p->room_number2 == 205 || 
-            p->room_number2 == 301 || p->room_number2 == 302 || p->room_number2 == 303 || p->room_number2 == 304 || p->room_number2 == 305 || 
-            p->room_number2 == 401 || p->room_number2 == 402 || p->room_number2 == 403 || p->room_number2 == 404 || p->room_number2 == 405 || 
-            p->room_number2 == 501 || p->room_number2 == 502 || p->room_number2 == 503 || p->room_number2 == 504 || p->room_number2 == 505)
-            {
-                break;
-            }
-        }
+        
 	    printf("묶을 인원은? : ");
 	    scanf("%d", &p->head_count2);
 
@@ -58,23 +42,7 @@ void updateReservation(Reserve *p[], int *count) {
 	else {
         printf("\n예약할 방 번호는? : ");
 	    scanf("%d", &p[editCount-1]->room_number2);
-    	while(p[editCount-1]->room_number2 != 101 || p[editCount-1]->room_number2 != 102 || p[editCount-1]->room_number2 != 103 || p[editCount-1]->room_number2 != 104 || p[editCount-1]->room_number2 != 105 || 
-        p[editCount-1]->room_number2 != 201 || p[editCount-1]->room_number2 != 202 || p[editCount-1]->room_number2 != 203 || p[editCount-1]->room_number2 != 204 || p[editCount-1]->room_number2 != 205 || 
-        p[editCount-1]->room_number2 != 301 || p[editCount-1]->room_number2 != 302 || p[editCount-1]->room_number2 != 303 || p[editCount-1]->room_number2 != 304 || p[editCount-1]->room_number2 != 305 || 
-        p[editCount-1]->room_number2 != 401 || p[editCount-1]->room_number2 != 402 || p[editCount-1]->room_number2 != 403 || p[editCount-1]->room_number2 != 404 || p[editCount-1]->room_number2 != 405 || 
-        p[editCount-1]->room_number2 != 501 || p[editCount-1]->room_number2 != 502 || p[editCount-1]->room_number2 != 503 || p[editCount-1]->room_number2 != 504 || p[editCount-1]->room_number2 != 505)
-        {
-            printf("방이 존재하지 않습니다\n다시 입력해 주세요 : ");
-            scanf("%d", &p[editCount-1]->room_number2);
-            if(p[editCount-1]->room_number2 == 101 || p[editCount-1]->room_number2 == 102 || p[editCount-1]->room_number2 == 103 || p[editCount-1]->room_number2 == 104 || p[editCount-1]->room_number2 == 105 || 
-            p[editCount-1]->room_number2 == 201 || p[editCount-1]->room_number2 == 202 || p[editCount-1]->room_number2 == 203 || p[editCount-1]->room_number2 == 204 || p[editCount-1]->room_number2 == 205 || 
-            p[editCount-1]->room_number2 == 301 || p[editCount-1]->room_number2 == 302 || p[editCount-1]->room_number2 == 303 || p[editCount-1]->room_number2 == 304 || p[editCount-1]->room_number2 == 305 || 
-            p[editCount-1]->room_number2 == 401 || p[editCount-1]->room_number2 == 402 || p[editCount-1]->room_number2 == 403 || p[editCount-1]->room_number2 == 404 || p[editCount-1]->room_number2 == 405 || 
-            p[editCount-1]->room_number2 == 501 || p[editCount-1]->room_number2 == 502 || p[editCount-1]->room_number2 == 503 || p[editCount-1]->room_number2 == 504 || p[editCount-1]->room_number2 == 505)
-            {
-                break;
-            }
-        }
+    	
     	printf("인원수는? : ");
     	scanf("%d", &p[editCount-1]->head_count2);
 
