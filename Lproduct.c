@@ -216,13 +216,14 @@ void search_room_info(Hotel *p[], int count)
     {
         if((p[i]->room_number == find))
         {
-            printf("%2d ", i+1);
+            printf("%2d   ", i+1);
             readHotel(*p[i]);
             scnt++;
         }
-        
-        if(scnt == 0) printf("=> 방이 없습니다!");
-        printf("\n");
+    }
+    if(scnt == 0)
+    {
+        printf("=> 방이 없습니다!\n");
     }
 }
 
@@ -241,7 +242,7 @@ void search_bed_count(Hotel *p[], int count)
     {
         if(p[i]->bed_count == find)
         {
-            printf("%2d ", i+1);
+            printf("%2d   ", i+1);
             readHotel(*p[i]);
             scnt++;
         }
@@ -264,7 +265,7 @@ void search_head_count(Hotel *p[], int count)
     {
         if(p[i]->head_count == find)
         {
-            printf("%2d ", i+1);
+            printf("%2d   ", i+1);
             readHotel(*p[i]);
             scnt++;
         }
@@ -283,7 +284,7 @@ void search_empty_room(Hotel *p[], int count)
     {
         if(p[i]->check == 0) //0 = empty, 1 = reserved
         {
-            printf("%2d ", i+1);
+            printf("%2d   ", i+1);
             readHotel(*p[i]);
             scnt++;
         }
@@ -298,13 +299,13 @@ void search_name(Reserve *p[],Hotel *h[], int count)
     char search[20];
     printf("검색할 예약자 이름은? : ");
     scanf("%s", search);
-    printf("\n No Room# BedCount HeadCount Available \n");
-    printf("=========================================\n");
+    printf("\n No Room# HeadCount Name \n");
+    printf("==============================\n");
     for (int i = 0; i < count; i++)
     {
         if(strcmp(p[i]->name2,search) == 0)
         {
-            printf("%2d ", i+1);
+            printf("%2d   ", i+1);
             readReserve(*p[i]);
             scnt++;
         }
