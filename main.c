@@ -4,7 +4,7 @@ int selectMenu()
 {
     int menu;
     printf("==================\n");
-    printf("1.예약된 방 조회\n");
+    printf("1. 예약된 방 조회\n");
     printf("2. 방 예약\n");
     printf("3. 방 예약 수정\n");
     printf("4. 방 예약 취소\n");
